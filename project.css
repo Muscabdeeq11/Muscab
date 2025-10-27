@@ -1,0 +1,99 @@
+
+
+
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #1e6abc, #201691);
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+  }
+
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    min-width: 120px; 
+  }
+
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  }
+
+  .chapter-btn { background: #3498db; }
+  .assignment-btn { background: #27ae60; }
+  .about-btn { background: #e67e22; }
+
+  pre {
+    background-color: #1e1e2f;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 12px;
+    overflow-x: auto;
+    font-size: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  pre button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #8e44ad;
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  pre button:hover {
+    background: #732d91;
+  }
+
+  #result {
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    min-height: 50px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+  }
+
+
+  @media (max-width: 900px) {
+    .section button {
+      flex: 1 1 45%; 
+    }
+  }
+
+  @media (max-width: 600px) {
+    .section button {
+      flex: 1 1 100%; 
+    }
+  }
